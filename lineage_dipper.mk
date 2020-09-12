@@ -19,7 +19,7 @@ TARGET_INCLUDE_STOCK_ARCORE := true
 endif
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := sakura_dipper
+PRODUCT_NAME := lineage_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
