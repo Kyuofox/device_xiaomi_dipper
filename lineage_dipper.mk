@@ -18,14 +18,12 @@ TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 endif
 
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := sakura_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
 PRODUCT_MANUFACTURER := Xiaomi
-SAKURA_OFFICIAL=true
 
 BUILD_FINGERPRINT := "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys"
 
@@ -40,3 +38,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 LAWNCHAIR_OPTOUT := false
 # To compile the GApps variant.
 SAKURA_GAPPS := false
+# True to Official
+SAKURA_OFFICIAL=true

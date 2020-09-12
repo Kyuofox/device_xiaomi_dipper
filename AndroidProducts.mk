@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/sakura_dipper.mk
+    $(LOCAL_DIR)/lineage_dipper.mk
 
 COMMON_LUNCH_CHOICES := \
-sakura_dipper-user \
-sakura_dipper-userdebug \
-sakura_dipper-eng
+lineage_dipper-user \
+lineage_dipper-userdebug \
+lineage_dipper-eng
