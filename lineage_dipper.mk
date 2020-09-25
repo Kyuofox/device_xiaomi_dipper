@@ -33,10 +33,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Project Sakura Specific Flags.
-# False to build with Lawnchair Launcher and true build with OnePlus Launcher.
-LAWNCHAIR_OPTOUT := false
-# To compile the GApps variant.
+#Sakura stuffs
+SAKURA_OFFICIAL := false
+TARGET_BOOT_ANIMATION_RES := 1080
+LAWNCHAIR_OPTOUT := true
 SAKURA_GAPPS := false
-# True to Official
-SAKURA_OFFICIAL=true
