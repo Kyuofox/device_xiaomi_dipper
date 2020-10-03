@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/dipper/device.mk)
 
 # Inherit some common Fluid stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
-$(call inherit-product, device/xiaomi/cepheus/fluid_config.mk)
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+$(call inherit-product, device/xiaomi/dipper/fluid_config.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := fluid_dipper
