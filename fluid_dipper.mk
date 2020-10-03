@@ -4,13 +4,18 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 $(call inherit-product, device/xiaomi/dipper/device.mk)
 
-# Inherit some common YAAP stuff.
+# Inherit some common Fluid stuff.
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+$(call inherit-product, device/xiaomi/cepheus/fluid_config.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_dipper
+PRODUCT_NAME := fluid_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
