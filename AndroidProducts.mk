@@ -14,4 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_dipper.mk
+    $(LOCAL_DIR)/syberia_dipper.mk
+
+COMMON_LUNCH_CHOICES := \
+syberia_dipper-user \
+syberia_dipper-userdebug \
+syberia_dipper-eng
