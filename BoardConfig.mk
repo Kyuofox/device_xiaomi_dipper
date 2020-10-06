@@ -17,7 +17,7 @@ TARGET_USES_COLOR_METADATA := true
 TARGET_SCREEN_DENSITY := 411
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/dipper
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
 TARGET_KERNEL_CONFIG := dipper_defconfig
 KERNEL_SUPPORTS_LLVM_TOOLS := true
 
