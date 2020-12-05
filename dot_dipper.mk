@@ -9,6 +9,9 @@ $(call inherit-product, device/xiaomi/dipper/device.mk)
 # Inherit some common Dot stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 
+# Inherit some common Custom stuff.
+$(call inherit-product-if-exists, external/moto/faceunlock/config.mk)
+
 scr_resolution := 1080
 TARGET_BOOT_ANIMATION_RES := 1080
 
