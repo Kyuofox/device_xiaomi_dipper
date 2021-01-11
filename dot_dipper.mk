@@ -10,13 +10,13 @@ $(call inherit-product, device/xiaomi/dipper/device.mk)
 $(call inherit-product-if-exists, vendor/Lawnchair/config.mk)
 $(call inherit-product-if-exists, external/moto/faceunlock/config.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common dotOS stuff.
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_dipper
+PRODUCT_NAME := dot_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
