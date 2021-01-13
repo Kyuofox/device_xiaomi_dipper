@@ -15,6 +15,9 @@ TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/404/configs/common.mk)
 
+# Project404
+$(call inherit-product, vendor/404/configs/BoardConfig404.mk)
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := 404_dipper
 PRODUCT_DEVICE := dipper
