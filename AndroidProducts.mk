@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_dipper.mk
+    $(LOCAL_DIR)/streak_dipper.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_dipper-user \
-    dot_dipper-userdebug \
-    dot_dipper-eng
+    streak_dipper-user \
+    streak_dipper-userdebug \
+    streak_dipper-eng

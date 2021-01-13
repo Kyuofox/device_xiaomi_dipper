@@ -13,10 +13,10 @@ $(call inherit-product-if-exists, external/moto/faceunlock/config.mk)
 # Inherit some common dotOS stuff.
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/dot/config/common.mk)
+$(call inherit-product, vendor/streak/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := dot_dipper
+PRODUCT_NAME := streak_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
@@ -29,3 +29,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="dipper"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Streak
+$(call inherit-product, vendor/streak/config/BoardConfigStreak.mk)
