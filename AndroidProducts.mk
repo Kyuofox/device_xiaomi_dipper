@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_dipper.mk
+    $(LOCAL_DIR)/nitrogen_dipper.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_dipper-user \
-    dot_dipper-userdebug \
-    dot_dipper-eng
+    nitrogen_dipper-user \
+    nitrogen_dipper-userdebug \
+    nitrogen_dipper-eng
