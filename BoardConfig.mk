@@ -22,6 +22,21 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
 TARGET_KERNEL_CONFIG := dipper_defconfig
 TARGET_KERNEL_CLANG_VERSION := r407598
 KERNEL_SUPPORTS_LLVM_TOOLS := true
+ifeq ($(KERNEL_SUPPORTS_LLVM_TOOLS),true)
+    KERNEL_LD := LD=ld.lld
+    KERNEL_AR := AR=llvm-ar
+    KERNEL_OBJCOPY := OBJCOPY=llvm-objcopy
+    KERNEL_OBJDUMP := OBJDUMP=llvm-objdump
+    KERNEL_NM := NM=llvm-nm
+    KERNEL_STRIP := STRIP=llvm-strip
+else
+    KERNEL_LD :=
+    KERNEL_AR :=
+    KERNEL_OBJCOPY :=
+    KERNEL_OBJDUMP :=
+    KERNEL_NM :=
+    KERNEL_STRIP :=
+endif
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
