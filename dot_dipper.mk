@@ -6,13 +6,13 @@
 
 $(call inherit-product, device/xiaomi/dipper/device.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common Dot stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
 scr_resolution := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_dipper
+PRODUCT_NAME := dot_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
