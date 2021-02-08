@@ -10,6 +10,7 @@ $(call inherit-product, device/xiaomi/dipper/device.mk)
 $(call inherit-product, vendor/dot/config/common.mk)
 
 scr_resolution := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := dot_dipper
