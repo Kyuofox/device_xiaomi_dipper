@@ -9,6 +9,12 @@ $(call inherit-product, device/xiaomi/dipper/device.mk)
 # Inherit some common Miku UI stuff.
 $(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
+# Maintaier
+MIKU_MASTER := Kyuofox
+
+# MikuUI UNOFFICIAL
+TARGET_MIKU_BUILD_VARIANT := UNOFFICIAL
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := miku_dipper
 PRODUCT_DEVICE := dipper
