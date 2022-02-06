@@ -6,11 +6,11 @@
 
 $(call inherit-product, device/xiaomi/dipper/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Miku UI stuff.
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_dipper
+PRODUCT_NAME := miku_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
