@@ -8,6 +8,7 @@ $(call inherit-product, device/xiaomi/dipper/device.mk)
 
 # Inherit some common Kaleidoscope stuff.
 $(call inherit-product, vendor/kscope/config/mobile.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := kscope_dipper
