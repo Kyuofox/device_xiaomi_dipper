@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/kscope_dipper.mk
+    $(LOCAL_DIR)/p404_dipper.mk
 
 COMMON_LUNCH_CHOICES := \
-    kscope_dipper-user \
-    kscope_dipper-userdebug \
-    kscope_dipper-eng
+    p404_dipper-user \
+    p404_dipper-userdebug \
+    p404_dipper-eng
